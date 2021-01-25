@@ -16,3 +16,8 @@ int main(void) {
     sort(v.begin(), v.end());
     cout << sum/5 << "\n" << v[2];
 }
+
+//ios_base::sync_with_stdio(0), cin.tie(0)
+//auto 
+//for(auto &k:v)
+//vector algorithm sort
