@@ -23,3 +23,8 @@ int main(){
         cout << k << "\n";
     }
 }
+
+/*
+to_string(string s)
+strcpy, s.c_str()
+*/
