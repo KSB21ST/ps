@@ -15,7 +15,7 @@ int main()
         sum += k;
     }
     sum = sum - 100;
-    int ans1, ans2;
+    sort(v.begin(), v.end());
     for(auto k:v){
         if (num[sum - k] >= 1){
             num[k] -= 1;
@@ -23,12 +23,17 @@ int main()
             break;
         }
     }
-    sort(v.begin(), v.end());
-    for(auto k:num){
-        cout << k << "\n";
-        for(int i=0;i<num[k];i++){
-            cout << k << "\n";
+    for(int count = 0;count<101;count++){
+        for(int i=1;i<=num[count];i++){
+            cout << count << "\n";
         }
+        // cout << num[count] << endl;
     }
 
 }
+
+/*
+O(n) 으로 코드를 작성하기 위해 num(101) 짜리 벡터를 씀
+헷갈렸던 부분 > 중복되는 요소가 여러개 있으면 한 번만 -1 을 해줘야 하고,
+중복된 만큼 프린트해줘야 한다.
+*/
