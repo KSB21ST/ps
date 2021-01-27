@@ -16,4 +16,4 @@ ctrl+alt+a: execute
 [C++](http://www.tcpschool.com/c/c_pointer_various)
 
 
-![커리큘럼]((https://user-images.githubusercontent.com/58674914/105943193-1c432e80-60a4-11eb-8f06-abbc8b5d276b.png))
+![커리큘럼](https://user-images.githubusercontent.com/58674914/105943193-1c432e80-60a4-11eb-8f06-abbc8b5d276b.png)
