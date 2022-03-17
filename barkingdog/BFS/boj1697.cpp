@@ -24,7 +24,7 @@ int main(){
                 cout << dist[cur] + 1;
                 return 0;
             }
-            --> 이렇게 하면 틀린다. why?
+            --> 이 부분만 있으면 틀렸다고 나옴.. 왜일까??
             */
             dist[nx] = dist[cur] + 1;
             Q.push(nx);
