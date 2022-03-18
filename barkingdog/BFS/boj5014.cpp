@@ -9,9 +9,9 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
     cin >> f >> s >> g >> u >> d;
-    fill(vis[0], vis[0] + f + 1, -1);
+    fill(vis, vis + f + 1, -1);
     queue<int>Q;
-    vis[s] = 1;
+    vis[s] = 0;
     Q.push(s);
     while(!Q.empty()){
         int cur = Q.front(); Q.pop();
@@ -23,8 +23,9 @@ int main(){
                 nx = cur - d;
             }
             if(nx < 1 || nx > f) continue;
-            if(vis[nx] == 1) continue;
+            if(vis[nx] >= 0) continue;
             vis[nx] = vis[cur] + 1;
+            Q.push(nx);
         }   
     }
     if(vis[g] >= 0)
@@ -32,3 +33,6 @@ int main(){
     else
         cout << "use the stairs";
 }
+/*
+한 번에 맞음
+*/
