@@ -6,9 +6,7 @@ int arr[21];
 void func(int _sum, int idx){
     string s1 = "";
     for(int i=0;i<idx;i++) s1 += "_";
-    // cout << s1 << "func_sum: " << _sum << " idx: " << idx << "\n";
     if(_sum == s){
-        // cout << "here?????? _sum: " << _sum << " s: " << s << " cnt: " << _cnt << "\n";
         _cnt++;
     }
     if(_sum > 1000000 && idx == 0) {_sum = 0;}
@@ -16,9 +14,7 @@ void func(int _sum, int idx){
         string s = "";
         for(int j=0;j<idx;j++) {s += "_";}
         int nsum = _sum + arr[i];
-        // cout << s << "i: " << i << " arr[i]: " << arr[i] << " idx: " << idx << " nsum: " << nsum << "\n";
         func(nsum, i+1);
-        // cout << s << "out of func, arr[i]: " << arr[i] << "\n";
     }
 }
 int main(){
@@ -37,5 +33,5 @@ int main(){
 하지만 바킹독 풀이가 훨씬 간단하기 때문에 꼭 기억해두어야겠다
 어쨌든 이 문제는 순서가 상관 없기 때문에 오로지 앞으로만 나아가면 되고,
 그래서 func 에 누적해서 idx 를 주고 그 idx 부터 끝까지 돌도록 했다
-간단한 문제였는데, 재귀 함수 때문에 디버깅이 오래걸렸다. (보이는가 cout의 흔적들..)
+간단한 문제였는데, 재귀 함수 때문에 디버깅이 오래걸렸다.
 */
