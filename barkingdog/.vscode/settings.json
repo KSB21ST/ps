@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "algorithm": "cpp",
+        "iostream": "cpp",
+        "queue": "cpp",
+        "ios": "cpp",
+        "utility": "cpp",
+        "iosfwd": "cpp",
+        "stack": "cpp"
+    }
+}
